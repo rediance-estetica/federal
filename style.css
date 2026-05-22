@@ -477,25 +477,25 @@ footer {
     }
 }
 /* ==========================================================================
-   ANIMAÇÃO DE ENTRADA SUAVE (FADE IN + SUBIDA)
+   ANIMAÇÃO TOTAL DO SITE (FADE IN + SUBIDA EM TUDO)
    ========================================================================== */
 
-/* 1. Criamos a animação com a duração de 1.5s solicitada */
-@keyframes fadeInUp {
+/* 1. Definição da animação suave de 1.5s */
+@keyframes siteCompletoFadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px); /* Começa 30px mais abaixo */
+        transform: translateY(40px); /* Tudo começa um pouco abaixo */
     }
     to {
         opacity: 1;
-        transform: translateY(0);    /* Termina na posição original */
+        transform: translateY(0);    /* Tudo estabiliza na posição original */
     }
 }
 
-/* 2. Aplicamos o efeito nos blocos principais de conteúdo de cada página */
-.hero-content, 
-.container-evento, 
-.card-indisponivel, 
-.erro-container {
-    animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+/* 2. Aplicação em massa: Anima a barra de cima, a imagem/conteúdo principal e o rodapé */
+header, 
+main, 
+section, 
+footer {
+    animation: siteCompletoFadeInUp 1.5s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
 }
