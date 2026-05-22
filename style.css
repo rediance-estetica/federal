@@ -499,3 +499,16 @@ section,
 footer {
     animation: siteCompletoFadeInUp 1.5s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-imagem {
+    height: 65px; /* Tamanho ideal para a barra de cima */
+    width: auto;
+    display: block;
+    /* Adiciona um leve brilho para destacar o dourado do seu logo */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
