@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiance | Sede & Convite Exclusivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo-container">
+                <div class="logo-marca">Radiance</div>
+                <div class="logo-sub">Beleza e Estética</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="convite.html" class="active">Sede & Convite</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="secao-evento-pagina">
+        <div class="container-evento">
+            <div class="decoracao-card">✦</div>
+            <span class="badge-exclusivo">Acesso Restrito</span>
+            <h2 class="titulo-evento">Localização & Entrada</h2>
+            <p class="descricao-evento">A Radiance preza pela estrita exclusividade. Não possuímos canais abertos de contato digital ou agendamento comum; a entrada e os atendimentos em nossa sede ocorrem unicamente mediante a apresentação e validação do seu convite oficial.</p>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Local:</strong> <span>7ºAno - Federal Sistema de Ensino</span>
+                </div>
+                <div class="info-item">
+                    <strong>Endereço:</strong> <span>Tv. Castelo Branco, 685 - São Brás, Belém - PA</span>
+                </div>
+                <div class="info-item">
+                    <strong>Data:</strong> <span>30 de maio de 2026 (Sábado)</span>
+                </div>
+                <div class="info-item">
+                    <strong>Horário:</strong> <span>Das 8h às 13h</span>
+                </div>
+            </div>
+
+            <p class="info-nota">Possui um código impresso ou digital? Clique abaixo para registrar e validar o seu ingresso antecipadamente.</p>
+            <button class="btn" id="btnValidar">Validar meu Convite</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Radiance Estética. Evento Exclusivo - Sistema de Ensino Federal.</p>
+    </footer>
+
+    <div class="modal" id="modalConvite">
+        <div class="modal-content">
+            <span class="fechar-modal" id="btnFechar">&times;</span>
+            <h3>Validar Entrada</h3>
+            <p>Insira abaixo o código do seu convite do 7ºAno para liberar suas credenciais de acesso à sede.</p>
+            <input type="text" class="input-convite" placeholder="Digite o código aqui..." id="inputCodigo">
+            <button class="btn" id="btnConfirmarCodigo">Confirmar Presença</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
