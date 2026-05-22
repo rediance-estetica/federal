@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiance | Página Não Encontrada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para a experiência da página 404 */
+        .erro-pagina {
+            min-height: calc(100vh - 150px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 160px 20px 80px 20px;
+        }
+        .erro-container {
+            max-width: 600px;
+            background-color: var(--cor-card);
+            padding: 60px 40px;
+            border-radius: 4px;
+            border: 1px solid rgba(90, 62, 45, 0.15);
+            box-shadow: 0 10px 30px rgba(90, 62, 45, 0.03);
+        }
+        .numero-erro {
+            font-family: 'Playfair Display', serif;
+            font-size: 96px;
+            color: var(--cor-dourado);
+            line-height: 1;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 4px;
+        }
+        .erro-container h2 {
+            font-size: 28px;
+            color: var(--cor-marrom);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .erro-container p {
+            font-size: 15px;
+            color: var(--texto-corpo);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo-container">
+                <div class="logo-marca">Radiance</div>
+                <div class="logo-sub">Beleza e Estética</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="convite.html">Sede & Convite</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="erro-pagina">
+        <div class="erro-container">
+            <div class="numero-erro">404</div>
+            <h2>Caminho Inexistente</h2>
+            <p>O tratamento ou a página que você tentou acessar não foi encontrada em nossos servidores. Certifique-se de que o endereço digitado está correto ou retorne à nossa página inicial.</p>
+            <a href="index.html" class="btn">Voltar ao Início</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Radiance Estética. Evento Exclusivo - Sistema de Ensino Federal.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
