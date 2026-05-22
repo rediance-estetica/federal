@@ -8,6 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Ajuste fino para a foto de destaque no meio do Hero */
+        .imagem-hero-destaque {
+            width: 120px; /* Tamanho elegante */
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%; /* Deixa redondinha combinando com a proposta */
+            border: 2px solid var(--cor-dourado); /* Contorno dourado de luxo */
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
 <body>
 
@@ -26,7 +38,9 @@
 
     <main class="hero">
         <div class="hero-content">
-            <span class="decoracao-✦">✦</span>
+            <img src="foto-marca-hero.jpg" alt="Destaque Rediance" class="imagem-hero-destaque">
+            
+            <span class="decoracao-✦" style="display: block; margin-top: 10px;">✦</span>
             <h1>Rediance Estética</h1>
             <p class="tagline">Realce sua melhor versão</p>
             <p class="chamada-principal">Sua beleza precisa de cuidado. Vivencie uma experiência exclusiva de bem-estar moldada cientificamente para você.</p>
