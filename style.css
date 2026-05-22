@@ -1,0 +1,478 @@
+/* ==========================================================================
+   PALETA DE CORES INSTITUCIONAL (Baseada estritamente na marca enviada)
+   ========================================================================== */
+:root {
+    --cor-fundo: #F5EFEB;       /* Bege Nude Clássico presente nos materiais */
+    --cor-card: #FAF6F4;        /* Off-white requintado para painéis e blocos */
+    --cor-marrom: #5A3E2D;      /* Marrom Nobre da tipografia oficial e logotipo */
+    --cor-dourado: #D4AF37;     /* Dourado Metálico dos traços finos e detalhes */
+    --cor-dourado-hover: #AA8417;
+    --texto-corpo: #6B5344;     /* Marrom suave para leitura confortável */
+    --branco-puro: #FFFFFF;
+}
+
+/* ==========================================================================
+   ESTILOS GERAIS & RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--texto-corpo);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .logo-marca {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR
+   ========================================================================== */
+header {
+    background-color: rgba(245, 239, 235, 0.98); 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(90, 62, 45, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-marca {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--cor-marrom);
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.logo-sub {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--cor-dourado);
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--cor-marrom);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: var(--cor-dourado);
+    border-bottom: 2px solid var(--cor-dourado);
+}
+
+/* ==========================================================================
+   BOTÕES CUSTOMIZADOS
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    background-color: var(--cor-marrom);
+    color: var(--cor-fundo);
+    padding: 16px 36px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid var(--cor-marrom);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(90, 62, 45, 0.15);
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--cor-marrom);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(90, 62, 45, 0.25);
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: var(--cor-marrom);
+    border: 1px solid var(--cor-marrom);
+    box-shadow: none;
+}
+
+.btn-secundario:hover {
+    background-color: var(--cor-marrom);
+    color: var(--cor-fundo);
+}
+
+/* ==========================================================================
+   PÁGINA: INÍCIO (INDEX) COM FOTO DE FUNDO INTEGRADA
+   ========================================================================== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 180px 20px 80px 20px;
+    /* Blend mode e camadas de opacidade para a imagem enviada funcionar perfeitamente em telas de PC/Celular */
+    background: linear-gradient(rgba(245, 239, 235, 0.75), rgba(245, 239, 235, 0.88)), 
+                url('foto-marca-hero.jpg') no-repeat center center/cover;
+    position: relative;
+    border-bottom: 1px solid rgba(90, 62, 45, 0.1);
+}
+
+.decoracao-✦ {
+    font-size: 28px;
+    color: var(--cor-dourado);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    color: var(--cor-marrom);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.hero-content .tagline {
+    font-size: 30px;
+    color: var(--cor-marrom);
+    font-style: italic;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-content .chamada-principal {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    max-width: 650px;
+    margin: 0 auto 50px auto;
+    color: var(--texto-corpo);
+    font-weight: 300;
+}
+
+.hero-botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   PÁGINA: CONVITE
+   ========================================================================== */
+.secao-evento-pagina {
+    padding: 160px 20px 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-evento {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid var(--cor-dourado);
+    padding: 60px 50px;
+    border-radius: 4px;
+    background-color: var(--branco-puro);
+    box-shadow: 0 15px 40px rgba(90, 62, 45, 0.04);
+}
+
+.decoracao-card {
+    font-size: 24px;
+    color: var(--cor-dourado);
+    margin-bottom: 15px;
+}
+
+.badge-exclusivo {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--cor-dourado);
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.titulo-evento {
+    font-size: 38px;
+    color: var(--cor-marrom);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.descricao-evento {
+    font-size: 15px;
+    max-width: 680px;
+    margin: 0 auto 35px auto;
+    font-weight: 300;
+}
+
+.info-grid {
+    text-align: left;
+    background: var(--cor-fundo);
+    padding: 30px;
+    border-radius: 4px;
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+    border-left: 3px solid var(--cor-marrom);
+}
+
+.info-item {
+    margin-bottom: 18px;
+    font-size: 15px;
+    display: flex;
+    border-bottom: 1px solid rgba(90, 62, 45, 0.08);
+    padding-bottom: 10px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.info-item strong {
+    color: var(--cor-marrom);
+    width: 110px;
+    flex-shrink: 0;
+}
+
+.info-nota {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--cor-marrom);
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   PÁGINA: SERVIÇOS
+   ========================================================================== */
+.servicos-pagina {
+    padding: 160px 20px 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.secao-titulo {
+    font-size: 42px;
+    color: var(--cor-marrom);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.secao-subtitulo {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--cor-dourado);
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.card-indisponivel {
+    background-color: var(--cor-card);
+    padding: 70px 50px;
+    border-radius: 4px;
+    max-width: 650px;
+    margin: 0 auto;
+    border: 1px dashed rgba(90, 62, 45, 0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.icone-status {
+    font-size: 20px;
+    color: var(--cor-dourado);
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card-indisponivel h3 {
+    font-size: 32px;
+    color: var(--cor-marrom);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.card-indisponivel p {
+    font-size: 15px;
+    color: var(--texto-corpo);
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   FOOTER GERAL
+   ========================================================================== */
+footer {
+    background-color: var(--cor-marrom);
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   MODAL DE VALIDAÇÃO
+   ========================================================================== */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(90, 62, 45, 0.5);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: var(--cor-card);
+    padding: 50px 40px;
+    border-radius: 4px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    border: 1px solid var(--cor-dourado);
+    position: relative;
+    animation: surgimentoModal 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes surgimentoModal {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fechar-modal {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--cor-marrom);
+    transition: color 0.2s ease;
+}
+
+.fechar-modal:hover {
+    color: var(--cor-dourado);
+}
+
+.modal h3 {
+    color: var(--cor-marrom);
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.modal p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.input-convite {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(90, 62, 45, 0.25);
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: var(--branco-puro);
+    color: var(--cor-marrom);
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.input-convite:focus {
+    border-color: var(--cor-dourado);
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    .nav-menu a {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+    .logo-marca {
+        font-size: 22px;
+    }
+    .logo-sub {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .hero-content h1 {
+        font-size: 40px;
+    }
+    .hero-content .tagline {
+        font-size: 22px;
+    }
+    .titulo-evento {
+        font-size: 28px;
+    }
+    .container-evento {
+        padding: 40px 20px;
+    }
+    .secao-titulo {
+        font-size: 32px;
+    }
+    .card-indisponivel {
+        padding: 40px 25px;
+    }
+}
