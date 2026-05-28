@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rediance | Nossos Serviços</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos exclusivos para a tabela de preços de luxo */
+        .secao-servicos {
+            padding: 160px 20px 80px 20px;
+            min-height: calc(100vh - 150px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container-tabela {
+            width: 100%;
+            max-width: 700px;
+            background-color: var(--cor-card);
+            border: 1px solid rgba(90, 62, 45, 0.15);
+            border-radius: 4px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(90, 62, 45, 0.03);
+            margin-top: 30px;
+        }
+        .titulo-servicos {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: var(--cor-marrom);
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        .subtitulo-servicos {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--cor-dourado);
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+        .tabela-precos {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .tabela-precos tr {
+            border-bottom: 1px dashed rgba(90, 62, 45, 0.2);
+        }
+        .tabela-precos tr:last-child {
+            border-bottom: none;
+        }
+        .tabela-precos td {
+            padding: 18px 0;
+            font-size: 15px;
+            color: var(--texto-corpo);
+        }
+        .nome-item {
+            font-weight: 400;
+            text-transform: capitalize;
+            color: var(--cor-marrom);
+        }
+        .preco-item {
+            text-align: right;
+            font-weight: 600;
+            color: var(--cor-dourado);
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+        }
+        .nota-servicos {
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            color: var(--texto-corpo);
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo-container">
+                <img src="logo-rediance.png" alt="Rediance Estética" class="logo-imagem">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="convite.html">Sede & Convite</a></li>
+                <li><a href="servicos.html" class="active">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="secao-servicos">
+        <h1 class="titulo-servicos">Menu de Tratamentos</h1>
+        <p class="subtitulo-servicos">Tabela de Valores Oficiais</p>
+
+        <div class="container-tabela">
+            <table class="tabela-precos">
+                <tr>
+                    <td class="nome-item">Massagem Relaxante</td>
+                    <td class="preco-item">R$ 1,00 / min</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Banho de Lua</td>
+                    <td class="preco-item">R$ 15,00</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Black Mask (Máscara Facial)</td>
+                    <td class="preco-item">R$ 15,00</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Protetor Solar Automático</td>
+                    <td class="preco-item">R$ 12,00</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Sérum Facial Iluminador</td>
+                    <td class="preco-item">R$ 10,00</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Hidratante Facial Profundo</td>
+                    <td class="preco-item">R$ 8,00</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Patches de Hidrogel para Olhos</td>
+                    <td class="preco-item">R$ 7,00</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Hidratante Labial</td>
+                    <td class="preco-item">R$ 6,00</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Lip-Oil e Liptint</td>
+                    <td class="preco-item">R$ 6,00</td>
+                </tr>
+                <tr>
+                    <td class="nome-item">Sabonete Facial</td>
+                    <td class="preco-item">R$ 5,00</td>
+                </tr>
+            </table>
+
+            <p class="nota-servicos">*Consulte a recepção para combos exclusivos e mimos com água e café.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rediance Estética. Evento Exclusivo - Sistema de Ensino Federal.</p>
+        <p style="margin-top: 8px; font-size: 11px; opacity: 0.7; letter-spacing: 2px; text-transform: uppercase;">
+            Desenvolvido por <strong style="color: var(--cor-dourado);">Eduardo</strong>
+        </p>
+    </footer>
+
+</body>
+</html>
