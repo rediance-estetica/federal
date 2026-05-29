@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rediance | Nossos Tratamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos exclusivos para a tabela de preços de luxo */
+        .secao-servicos {
+            padding: 160px 20px 80px 20px;
+            min-height: calc(100vh - 150px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container-tabela {
+            width: 100%;
+            max-width: 750px;
+            background-color: var(--cor-card);
+            border: 1px solid rgba(90, 62, 45, 0.15);
+            border-radius: 4px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(90, 62, 45, 0.03);
+            margin-top: 30px;
+        }
+        .titulo-servicos {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: var(--cor-marrom);
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        .subtitulo-servicos {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--cor-dourado);
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+        .tabela-precos {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .tabela-precos tr {
+            border-bottom: 1px dashed rgba(90, 62, 45, 0.2);
+        }
+        .tabela-precos tr:last-child {
+            border-bottom: none;
+        }
+        .tabela-precos td {
+            padding: 14px 0;
+            font-size: 15px;
+            color: var(--texto-corpo);
+            vertical-align: middle;
+        }
+        
+        /* Layout da foto alinhada ao nome */
+        .coluna-produto {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        /* Estilo dos círculos das fotos */
+        .circulo-foto {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 1.5px solid var(--cor-dourado);
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+            flex-shrink: 0;
+        }
+        
+        .nome-item {
+            font-weight: 400;
+            text-transform: capitalize;
+            color: var(--cor-marrom);
+        }
+        .preco-item {
+            text-align: right;
+            font-weight: 600;
+            color: var(--cor-dourado);
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            white-space: nowrap;
+        }
+
+        /* Estilo do aviso de imagens ilustrativas */
+        .imagens-ilustrativas {
+            display: block;
+            text-align: right;
+            font-size: 11px;
+            font-style: italic;
+            color: var(--texto-corpo);
+            opacity: 0.6;
+            margin-top: 15px;
+        }
+
+        .nota-servicos {
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            color: var(--texto-corpo);
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo-container">
+                <img src="logo-rediance.png" alt="Rediance Estética" class="logo-imagem">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="convite.html">Sede & Convite</a></li>
+                <li><a href="servicos.html" class="active">Tratamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="secao-servicos">
+        <h1 class="titulo-servicos">Menu de Tratamentos</h1>
+        <p class="subtitulo-servicos">Tabela de Valores Oficiais</p>
+
+        <div class="container-tabela">
+            <table class="tabela-precos">
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-massagem.jpg" alt="Massagem Relaxante" class="circulo-foto">
+                            <span class="nome-item">Massagem Relaxante</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 1,00 / min</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-esfoliante.jpg" alt="Esfoliante Corporal" class="circulo-foto">
+                            <span class="nome-item">Esfoliante Corporal</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 4,00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-bubbaloo.png" alt="Sabonete Bubbaloo" class="circulo-foto">
+                            <span class="nome-item">Sabonete Bubbaloo</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 6,00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-bodyspray.jpg" alt="Body Spray" class="circulo-foto">
+                            <span class="nome-item">Body Spray</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 8,99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-aguamicelar.png" alt="Água Micelar" class="circulo-foto">
+                            <span class="nome-item">Água Micelar</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 3,99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-gelfacial.jpg" alt="Gel Facial" class="circulo-foto">
+                            <span class="nome-item">Gel Facial</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 5,99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-mascaraborra.jpg" alt="Máscara de Cacto / Borra" class="circulo-foto">
+                            <span class="nome-item">Máscara de Cacto</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 4,00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-banhodelua.jpg" alt="Kit Banho de Lua" class="circulo-foto">
+                            <span class="nome-item">Kit Banho de Lua</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 12,00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-acid.jpg" alt="Ácido Hialurônico" class="circulo-foto">
+                            <span class="nome-item">Ácido Hialurônico</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 10,00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-sabonetefacial.png" alt="Sabonete Facial Líquido" class="circulo-foto">
+                            <span class="nome-item">Sabonete Facial Nano Hyaluronic</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 7,00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-intimo.png" alt="Sabonete Íntimo" class="circulo-foto">
+                            <span class="nome-item">Sabonete Íntimo (Morango)</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 5,00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-espuma.jpg" alt="Sabonete em Espuma" class="circulo-foto">
+                            <span class="nome-item">Sabonete em Espuma (Corpo e Rosto)</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 9,99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="coluna-produto">
+                            <img src="foto-cera.jpg" alt="Cera Epilatória" class="circulo-foto">
+                            <span class="nome-item">Cera Epilatória</span>
+                        </div>
+                    </td>
+                    <td class="preco-item">R$ 8,99</td>
+                </tr>
+            </table>
+
+            <span class="imagens-ilustrativas">*Imagens ilustrativas*</span>
+
+            <p class="nota-servicos">*Consulte a recepção para combos exclusivos e mimos com água e café.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rediance Estética. Evento Exclusivo - Sistema de Ensino Federal.</p>
+        <p style="margin-top: 8px; font-size: 11px; opacity: 0.7; letter-spacing: 2px; text-transform: uppercase;">
+            Desenvolvido por <strong style="color: var(--cor-dourado);">Eduardo e Antônio</strong>
+        </p>
+    </footer>
+
+    <img src="https://rediance-federal.goatcounter.com/count?p=/servicos" alt="" style="display:none;">
+
+</body>
+</html>
